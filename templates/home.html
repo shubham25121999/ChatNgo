@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'style.css' %}"/>
+</head>
+<body>
+<div id="login">
+    <form method="POST" action="checkview" id="post-form">
+        {% csrf_token %}
+      <h1>ChatNgo</h1>
+      <input type="text" placeholder="Room Name" name="room_name">
+      <input type="text" placeholder="Username" name="username">
+      <button type="submit">Enter Room</button>
+    </form>
+  </div>
+  <a href="">Link to my GitHub</a>
+</body>
+  </html>
